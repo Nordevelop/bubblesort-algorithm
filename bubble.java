@@ -10,7 +10,7 @@ ublic class ArrayBurbuja {
 		nElementos = 0;       // inicializacion del array
 		}
 		//--------------------------------------------------------------
-		public void inserccion(long value)
+		public void insert(long value)
 		 // agrega elementos dentro del  array
 		{
 		a[nElementos] = value;
