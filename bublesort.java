@@ -2,13 +2,13 @@ import java.util.*;
 public class ArrayBurbuja {
 	
 		private long[] a;  //  declaracion de array 
-		private int nElementos;  // variable elementos del array
+		private int nElementos;  
 		//--------------------------------------------------------------
 		public ArrayBurbuja(int max)
 		 // constructor
 		{
 		a = new long[max];
-		nElementos = 0;       // inicializacion del array
+		nElementos = 0;       
 		}
 		//--------------------------------------------------------------
 		public void inserccion(long value)
