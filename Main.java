@@ -3,12 +3,12 @@ import java.util.Arrays;
 public class Main {
 
 	public static void main(String[] args) {
-		/*@Author Ncontreras
+		/*@Author Nordevelop
 		 * Algoritmo de ordenamiento metodo de Burbuja
 		 * 
 		 */
 		int maxSize = 100;            // array 
-		ArrayBurbuja arr;                // referencia al array
+		ArrayBurbuja arr;                // ref al array
 		arr = new ArrayBurbuja(maxSize);  // creacion del  array de hasta 100 elementos
 		arr.insert(101);           //insercion de N elementos dentro del  Array
 		arr.insert(72);
