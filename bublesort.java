@@ -1,48 +1,27 @@
+package misClase
 import java.util.*;
-public class ArrayBurbuja {
-	
-		private long[] a;  //  declaracion de array 
-		private int nElementos;  
-		//--------------------------------------------------------------
-		public ArrayBurbuja(int max)
-		 // constructor
-		{
-		a = new long[max];
-		nElementos = 0;       
-		}
-		//--------------------------------------------------------------
-		public void inserccion(long value)
-		 // agrega elementos dentro del  array
-		{
-		a[nElementos] = value;
-		 // inserta elemento
-		nElementos++;
-		 // incrementa
-		}
-		//--------------------------------------------------------------
-		public void mostrar()
-		 // mmetodo de mostrar el array
-		{
-		for(int j=0; j<nElementos; j++)   	 // for each  ,
-		System.out.print(a[j] + " ");        
-		System.out.println(" ");
-		}
-		//--------------------------------------------------------------
-		public void burbuja()
-		{
-		int salida, entrada;
-		for(salida=nElementos-1; salida>1; salida--)
-			for(entrada=0; entrada<salida; entrada++)
-		   if( a[entrada] > a[entrada+1] )
-		     intercambio(entrada, entrada+1);
-		 // Intercambio
-		} // Fin Metodo burbuja()
-		//--------------------------------------------------------------
-		private void intercambio(int uno, int dos) //metodo de intercambio
-		{
-		long aux = a[uno];
-		a[uno] = a[dos];
-		a[dos] = aux;
-		}
+public class Main {	
+	public static void main(string[]args){
+		/*Metodo de ordenamiento Burbuja
+		*Author Nordevelop
+		*/
+		int []a= {10,9,8,1,5,0,7,2,4,6,3};
+		int aux=0;
+		System.out.println("Array sin ordenar ");
+		System.out.println(Arrays.toString(a));
+		for (int i=0;i<a.length;i++) {
+		    for (int j=0;j<a.length-1;j++) {
+		       if (a[j]>a[j+1]) {
+			 aux =a[j];
+			 a[j]=a[j+1];
+		   	 a[j+1]=aux;
+			 }
+		    }
 		
+		 }
+		System.out.println("Array ordenado");
+		System.out.println(Arrays.toString(a));
+		
+	}	
+	
 }
