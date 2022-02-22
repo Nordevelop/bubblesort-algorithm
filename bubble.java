@@ -30,7 +30,7 @@ ublic class ArrayBurbuja {
 		   for(entrada=0; entrada<salida; entrada++) //  (Hacia Adelante)
 			if( a[entrada] > a[entrada+1] ) 
 		intercambio(entrada, entrada+1);
-		 //no se cierra con llaves los cliclos for
+		 //no se cierra con llaves los ciclos for
 		//solo tiene una instruccion	
 		 // Intercambio
 		} // Fin Metodo burbuja()
