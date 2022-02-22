@@ -7,9 +7,9 @@ public class Main {
 		 * Algoritmo de ordenamiento metodo de Burbuja
 		 * 
 		 */
-		int maxSize = 100;            // array 
-		ArrayBurbuja arr;                // ref al array
-		arr = new ArrayBurbuja(maxSize);  // creacion del  array de hasta 100 elementos
+		int maxSize = 100;            // var
+		ArrayBurbuja arr;                // llamada al Array de la clase ArrayBurbuja
+		arr = new ArrayBurbuja(maxSize);  //  dec  array de hasta 100 elementos
 		arr.insert(101);           //insercion de N elementos dentro del  Array
 		arr.insert(72);
 		arr.insert(3);
