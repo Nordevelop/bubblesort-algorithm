@@ -39,7 +39,7 @@ public class Main {
 		System.out.println("Array Completo"); //muestra en pantalla el Array sin ordenar
 		arr.mostrar();
 		System.out.println("array Ordenado por metodo Burbuja"); //muestra en pantalla el array ordenado
-		arr.burbujeo();
+		arr.burbuja();
 		arr.mostrar();
 		
 		
