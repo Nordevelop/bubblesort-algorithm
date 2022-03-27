@@ -1,14 +1,14 @@
 ublic class ArrayBurbuja {
 	
-		/*
-		*Author Nordevelop
+		/*Author Nordevelop
+		*objetos encapsulado con acceso denegado fuera de la  clase ArrayBurbuja()
 		*/
-	        private long[] a; //objetos encapsulado con acceso denegado en la clase Main()
+	        private long[] a; 
 		private int nElementos;  // variable entera que se dezplazara por el array
 		
 		public ArrayBurbuja(int max){ //clase constructor
 		a = new long[max];
-		nElementos = 0;       // inicializacion de la variable que se desplaza x el array
+		nElementos = 0;      
 		}
 	        /*
 		* Metodos 
@@ -29,8 +29,8 @@ ublic class ArrayBurbuja {
 		for(salida=nElementos-1; salida>1; salida--) //  (Hacia atras)
 		   for(entrada=0; entrada<salida; entrada++) //  (Hacia Adelante)
 			if( a[entrada] > a[entrada+1] ) 
-		intercambio(entrada, entrada+1);
-		 //no se cierra con llaves los ciclos for
+		             intercambio(entrada, entrada+1);
+		 //no se cierra con llaves los ciclos for 
 		//solo tiene una instruccion	
 		 // Intercambio
 		} // Fin Metodo burbuja()
